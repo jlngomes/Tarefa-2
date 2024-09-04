@@ -6,61 +6,73 @@
     <title>Tarefa 2</title>
 </head>
 <body>
-    <h1>Tipos de formulário</h1><br>
+    <h1>Tipos de formulário</h1>
     <form>
-        <h2>Text</h2>
+        <h2>1. Text</h2>
         <label for="fname">Primeiro nome:</label><br>
         <input type="text" id="fname" name="fname"><br>
         <label for="lname">Ultímo nome:</label><br>
         <input type="text" id="lname" name="lname"> 
         <br>
-        <h2>Radio</h2>
+        <h2>2. Radio</h2>
+        <label for="fname">Linguagem favorita de progamação?</label><br><br>
         <input type="radio" id="html" name="fav_language" value="HTML" checked>
         <label for="html">HTML</label><br>
-        <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="css">CSS</label><br>
+        <input type="radio" id="python" name="fav_language" value="python">
+        <label for="python">Python</label><br>
         <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-        <label for="javascript">JavaScript</label>
+        <label for="javascript">JavaScript</label><br>
+        <input type="radio" id="java" name="fav_language" value="Java">
+        <label for="java">Java</label><br>
+        <input type="radio" id="CSS" name="fav_language" value="CSS">
+        <label for="CSS">CSS</label><br>
+        <input type="radio" id="VBA" name="fav_language" value="VBA">
+        <label for="VBA">VBA</label>
         <br>
-        <h2>checkbox</h2>
+        <h2>3. checkbox</h2>
+        <label for="fname">Qual meio de transpote você tem em casa: </label><br><br>
         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> I have a bike</label><br>
+        <label for="vehicle1"> Uma bicicleta</label><br>
         <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-        <label for="vehicle2"> I have a car</label><br>
+        <label for="vehicle2"> Um carro</label><br>
         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-        <label for="vehicle3"> I have a boat</label>
+        <label for="vehicle3"> Uma moto</label>
         <br>
-        <h2>Botão Submit</h2>
-        <input type="submit" value="Submit">
+        <h2>4. Botão Submit/Envio</h2>
+        <input type="submit" value="Enviar">
         <br>
-        <h2>Select</h2>
+        <h2>5. Select</h2>
+        <label for="fname">Escolha sua marca de carro favorito:</label><br><br>
         <select id="cars" name="cars">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="fiat">Fiat</option>
+            <option value="volvo">BMW</option>
+            <option value="saab">Mercedes</option>
+            <option value="fiat">Porsche</option>
             <option value="audi">Audi</option>
         </select>
-        <h2>textarea</h2>
+        <h2>6. Textarea</h2>
         <textarea name="message" rows="10" cols="30">
-            You can also define the size of the text area by using CSS:
-            The cat was playing in the garden.
+            Sou admirador de tecnologia e inovação!! Estou sempre ansioso para aprender mais.
+            Graduando Engenharia da computação na facens, atuamente estou procurando uma oportunidade de trabalho na área de computação e TI para o meu crescimento pessoal e contribuição na empresa.
         </textarea>
-        <h2>fieldset e legend</h2>
+        <h2>7. Fieldset e Legend</h2>
         <fieldset>
-            <legend>Personalia:</legend>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <legend>Dados do Usuário:</legend>
+            <label for="fname">Nome:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Sobrenome:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="Contact">Contato:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
             <input type="submit" value="Submit">
         </fieldset>
-        <h2>datalist</h2>
+        <h2>8. Datalist</h2>
+        <label for="fname">Qual seu navegador de preferência? </label><br><br>
         <input list="browsers" name="browser">
         <datalist id="browsers">
         <option value="Internet Explorer">
         <option value="Firefox">
         <option value="Chrome">
-        <option value="Opera">
+        <option value="Opera GX">
         <option value="Safari">
         </datalist>
         <input type="submit">
